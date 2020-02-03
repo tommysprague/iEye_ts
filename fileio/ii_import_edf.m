@@ -111,6 +111,8 @@ x = M(:,2);
 y = M(:,3);
 pupil = M(:,4);
 
+% on windows, have to close files manually...
+fclose(fid);
 delete (asc_samp_file);
 
 % EXTRACT EVENTS
@@ -179,6 +181,8 @@ for i = 4:nchan
     end
 end
 
+% for windows, have to close files manually...
+fclose(fid);
 delete(asc_evnt_file);
 
 % CREATE FILE MATRIX

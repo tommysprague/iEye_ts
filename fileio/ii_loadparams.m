@@ -25,8 +25,8 @@ if nargin < 1
     ii_params.valid_epochs = NaN; % if NaN, don't trim
     
     % stimulus display information
-    ii_params.resolution = [1280 1024]; % Curtis lab, behavior room
-    ii_params.ppd = 34.1445;            % Curtis lab, behavior room (pix/deg)
+    ii_params.resolution = [2560 1440]; % Sprague lab, behavior rooms
+    ii_params.ppd = 33.5595;            % Sprague lab, behavior rooms (pix/deg)
     
     % blink correction
     ii_params.blink_thresh = 1.5;    % PERCENTILE!!! 

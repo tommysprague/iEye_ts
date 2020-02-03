@@ -11,7 +11,7 @@ function ii_init()
 % TODO: somehow do an automatic git pull from master at init?
 
 if ~ispref('iEye_ts','edf2asc_path')
-    edf2asc_path = '/Volumes/hyper/spacebin';
+    edf2asc_path = 'C:/Program Files (x86)/SR Research/Eyelink/EDF_Access_API/Example/';
 else
     edf2asc_path = getpref('iEye_ts','edf2asc_path');
 end
