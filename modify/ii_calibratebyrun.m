@@ -53,7 +53,7 @@ end
 % as we loop over trials, if a selection is missing within a trial we won't adjust and will just output a warning
 
 if sum(ii_cfg.sel)==0
-    error('iEye:ii_calibratebyrun:noSelections', 'No timepoints selected! Try ii_selectfixationsbytrial');
+    error('iEye:ii_calibratebyrun:noSelections', 'No timepoints selected! Try ii_selectfixationsbytrial. CALIBRATION NOT PEFORMED!!! All trials will be marked w/ poor calibration');
 end
 
 % DEFAULT VALUES

@@ -30,7 +30,11 @@ function [ii_sess] = ii_combineruns(ii_trial,run_labels)
 
 % make sure we're using the correct cat_struct
 full_path = mfilename('fullpath');
-util_path = sprintf('%s../util',full_path(1:find(full_path=='/',1,'last')));
+if ~ispc
+    util_path = sprintf('%s../util',full_path(1:find(full_path=='/',1,'last')));
+else
+    util_path = sprintf('%s../util',full_path(1:find(full_path=='\',1,'last')));
+end
 addpath(util_path);
 
 % if only a single run given, make it a cell array to make everything else
